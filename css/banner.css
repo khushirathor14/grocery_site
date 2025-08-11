@@ -1,0 +1,67 @@
+/* ==== Banner Styling Start === */
+.banner_area{
+	width:80%;
+	aspect-ratio: 4/1;
+	margin: 1rem auto;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.banner_area #BanerImg{
+	width:100%;
+	height:100%;
+	object-fit:cover;
+	object-position: center;
+}
+.fadeOut{
+	animation: fadeOut 1s ease-in forwards ;
+}
+.fadeIn{
+	animation: fadeIn 1s ease-out forwards ;
+}
+.banner_area{
+	position: relative;
+}
+.banner_area .bannerText{
+	text-transform: uppercase;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 2rem;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	text-shadow: -1px 1px 5px rgb(0, 0, 0);
+	font-family:'Times New Roman', Times, serif;
+	user-select: none;
+}
+.banner_area .bannerText .bannerTitle{
+	font-size: larger;
+	font-weight: 900;
+}
+/* ====Banner Styling end=== */
+
+@media only screen and (max-width:1000px){
+	.banner_area{
+		width:95%;
+		aspect-ratio: 2/1;
+	}
+	.banner_area .bannerText{
+		font-size: 1rem;
+	}
+}
+
+
+@keyframes fadeOut{
+	from{
+		opacity: 1;
+	}to{
+		opacity: 0;
+	}
+}
+
+@keyframes fadeIn{
+	from{
+		opacity: 0;
+	}to{
+		opacity: 1;
+	}
+}

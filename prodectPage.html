@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Product page</title>
+	<link rel="stylesheet" href="./css/genralStyle.css">
+	<link rel="stylesheet" href="css/prodectPage.css">
+	<link rel="stylesheet" href="css/headerStyle.css">
+	<link rel="stylesheet" href="css/footerStyle.css">
+	
+	<link rel="stylesheet" href="css/prodectPageGallery.css">
+	<link rel="stylesheet" href="css/addBtn.css">
+	<style>
+		/* === add button css start=== */
+		.add2CartBtnContainer{
+			width:12rem;
+			margin: 12px 0;
+		}
+		
+		/* === add button css end=== */
+		
+	</style>
+</head>
+<body>
+	<header></header>
+	
+	<div id="Product_container">
+		<div class="breadCrumb" id="breadCrumb">
+			<a href="#">home</a>/<a href="#">categary</a> / product name
+		</div>
+
+		<div class="section">
+			<div class="leftSection">
+				<!-- Product Gallery start -->
+				<div class="productGallery">
+					<div class="displayImg">
+						<div class="displayImgBox">
+							<img src="" alt="product image" class="ProductDisImg" id="ProductDisImg">
+							<div class="lens" id="lens"></div>
+						</div>
+						
+						<button class="navBtn leftNavBtn">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+								<path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/>
+							</svg>
+						</button>
+
+						<button class="navBtn rightNavBtn">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+								<path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/>
+							</svg>
+						</button>
+
+					</div>
+					<div class="imgThumbnail">
+						
+						<div class="thumRow">
+							<!-- <div class="thumImgBox selected">
+								<img src="./img/testImg/img3.jpg" alt="">
+							</div>
+							<div class="thumImgBox">
+								<img src="./img/testImg/img5.jpg" alt="">
+							</div> -->
+						</div>
+					</div>
+					<div class="result" id="result">
+						<!-- yanaha ek img tag create hota hai -->
+					</div>
+				</div>
+				<!-- Product Gallery end -->
+				<div class="prodLogDesc">
+					<p class="prodDescTitle">Long Description</p>
+					<p class="prodLogDetails">
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, sequi itaque hic omnis fugiat doloremque eligendi laborum voluptatem consectetur architecto!
+					</p>
+				</div>
+				
+			</div>
+
+			<div class="rightSection">
+				
+				<div class="prodDetails" id="prodDetails" >
+						<p class="prodName">Product name</p>
+						<p class="brandName">brand name</p>
+						<p class="prodDesc">
+							Lorem ipsum dolor sit amet consectetur,tecto!
+						</p>
+						<p class="rating">
+							<span class="ratingValue">4.5</span>
+							<span class="reviewCount">(1000)</span>
+						</p>
+						<p class="quantity">
+								<span class="quantityValue">10</span>&nbsp;
+								<span class="unit">mg</span>
+						</p>
+						<p class="mrp">
+								<span class="mrpValue">₹10 &nbsp;</span>
+								<span class="finalPriceValue">₹10 </span>
+								<span class="discount">50%</span>
+						</p>
+					<!-- CartBtn -->
+					 <div class="add2CartBtnContainer"></div>
+					<!-- <div class="CartBtn">
+						<button class="addBtn ">ADD</button>
+						<div class="counter hide">
+							<button class="decrease">—</button><p class="countDis">1</p><button class="increase">+</button>
+						</div>
+					</div> -->
+					
+				</div>
+			
+				<!-- <hr> -->
+				<div class="offers">
+					<p class="ListTitle">Available offers</p>
+						<ul>
+							<li><span class="offerType">Bank Offer </span>Unlimited Cashback on Flipkart Axis Bank Credit Card. <a href="#">T&C</a></li>
+							<li><span class="offerType">Bank Offer </span>off up to ₹1,000 on all Axis Bank Credit Card (incl. migrated ones) EMI Txns of ₹7,490 and above. <a href="#">T&C</a></li>
+							<li><span class="offerType">Bank Offer </span>off up to ₹1000 on Flipkart Axis Bank Credit Card EMI Txns, on orders of ₹7,490 and above<a href="#">T&C</a></li>
+							<li><span class="offerType">Special Price </span>Get extra 35% off (price inclusive of cashback/coupon). <a href="#">T&C</a></li>
+						</ul>
+				</div>
+				<div class="services">
+					<p class="ListTitle">Services</p>
+					<ul>
+						<li>
+							<div class="icons"><img src="img/productPage/leaf-solid.svg" alt=""></div>
+							<p>fresh</p>
+						</li>
+						<li>
+							<div class="icons"><img src="img/productPage/person-breastfeeding-solid.svg" alt=""></div>
+							<p>hygienic</p>
+						</li>
+						<li>
+							<div class="icons"><img src="img/productPage/alarm-clock.svg" alt=""></div>
+							<p>within 30min delivery</p>
+						</li>
+						<li>
+							<div class="icons"><img src="img/productPage/express.svg" alt=""></div>
+							<p>free home delivery</p></li>
+						<li><div class="icons"><img src="img/productPage/transaction_12341001.png" alt=""></div>
+							<p>cash on delivery</p></li>
+					</ul>
+				</div>
+				<!-- <div class="buttons">
+					<button class="buyBtn">Buy</button>
+					<button class="CartBtn">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+							<path d="M0 8C0 3.6 3.6 0 8 0H45.7C64.8 0 81.2 13.5 84.9 32.3L131.8 272H473.9c18.6 0 34.7-12.8 39-30.9L560.2 38.2c1-4.3 5.3-7 9.6-6s7 5.3 6 9.6L528.4 244.7c-5.9 25.3-28.5 43.3-54.5 43.3h-339l9.3 47.7c3.7 18.8 20.1 32.3 39.3 32.3H504c4.4 0 8 3.6 8 8s-3.6 8-8 8H183.5c-26.8 0-49.8-19-55-45.2L69.2 35.4C67 24.1 57.1 16 45.7 16H8c-4.4 0-8-3.6-8-8zM176 496a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm0-80a48 48 0 1 1 0 96 48 48 0 1 1 0-96zm320 48a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm-80 0a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zM328 8l0 172.7 66.3-66.3c3.1-3.1 8.2-3.1 11.3 0s3.1 8.2 0 11.3l-80 80c-3.1 3.1-8.2 3.1-11.3 0l-80-80c-3.1-3.1-3.1-8.2 0-11.3s8.2-3.1 11.3 0L312 180.7 312 8c0-4.4 3.6-8 8-8s8 3.6 8 8z"/>
+						</svg>
+						Add to Cart
+					</button>
+				</div> -->
+
+			</div>
+		</div>
+		<div id="userReviewComments" style="background-color: red;">user reviews div</div>
+		<div id="relatedItems" style="background-color: pink;"> releted items row</div>
+	</div>
+	<footer></footer>
+
+	<script type="module" src="./js/mainProductPageScript.js"></script>
+
+<script>
+
+
+
+	
+</script>
+</body>
+</html>

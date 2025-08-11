@@ -1,0 +1,165 @@
+	/* Gallery css start */
+		.productGallery{
+			width:30rem;
+			margin: 2% auto;
+			border-radius: 10px;
+			border: 1px solid black;
+			/* overflow: hidden; */
+			position: relative;
+		}
+
+		.productGallery .displayImg{
+			background-color: yellowgreen;
+			padding: 2%;
+			position: relative;
+		}
+
+		.productGallery .displayImg .displayImgBox{
+			width:var(--imgWidth);
+			aspect-ratio: 1;
+			margin: 0 auto;
+			border-radius: 10px;
+			overflow: hidden;
+			position: relative;
+		}
+
+		.productGallery .displayImg .displayImgBox img{
+			width:100%;
+			height: 100%;
+			object-fit: contain;
+			object-position: center;
+			display: block;
+		}
+		/* zoom privew syling start */
+		.productGallery .lens {
+      position: absolute;
+      /* border: 1px solid #000; */
+			box-shadow: 0 0 13px -3px black;
+      width: 7rem;
+      aspect-ratio: 1;
+			border-radius: 3px;
+      opacity: 0.4;
+      background-color: #fff;
+      display: none;
+      pointer-events: none;
+			cursor: pointer;
+			transform: translate(0, 0);
+			z-index: 10;
+			transition: left 0.1s ease, top 0.1s ease;
+    }
+
+    .productGallery .result {
+      /* border: 1px solid #000; */
+			box-shadow: 0px 0px 13px -4px rgb(0, 0, 0);
+			border-radius: 10px;
+      width: calc(var(--imgWidth )*1.5);
+      aspect-ratio: 1;
+			/* height: var( --imgHeight); */
+      overflow: hidden;
+      display: none;
+      position: absolute;
+      right: 0;
+      top: 0;
+			transform: translate(110%, 0) ;
+			z-index: 1;
+    }
+
+    .productGallery .result img {
+      position: absolute;
+      width: 200%;
+      aspect-ratio: 1;
+			transition: left 0.1s ease, top 0.1s ease;
+			/* height: 200%;calc(var(--imgHeight) * var(--zoomfactor) ); */
+    }
+		/* zoom privew syling end */
+		.productGallery .imgThumbnail{
+			width:100%;
+			/* position: relative; */
+		}
+
+		.productGallery .imgThumbnail .thumRow{
+			width:95%;
+			margin: 0 auto;
+			border-radius: 10px;
+			overflow: hidden;
+		}
+
+		.productGallery .imgThumbnail .thumRow .thumImgBox{
+			width:5rem;
+			aspect-ratio: 1;
+			object-fit: contain;
+			object-position: center;
+			border : 1px solid rgba(0, 0, 0, 0.1);
+			
+			border-radius: 10px;
+			overflow: hidden;
+		}
+
+		.productGallery .imgThumbnail .thumRow .thumImgBox img{
+			width:100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: center;
+		}
+		.productGallery .selected{
+			border: 2px solid rgba(233, 221, 0, 0.9) !important;
+			 /* box-shadow: 0 0 10px -3px rgba(255, 102, 0, 0.5); */
+		}
+		.productGallery .navBtn{
+			width: 3rem;
+			aspect-ratio: 1;
+			font-family: 'Okra', Helvetica;
+			/* font-size: 1rem;
+			font-weight: bolder;
+			color:rgba(110, 110, 110, 0.8);
+			text-shadow: 1px 1px 13px rgba(0, 0, 0, 0.99); */
+			border:none;
+			border-radius: 50%;
+			background-color: rgba(255, 255, 255, 0.9);
+			box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
+	
+			display:flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.productGallery .navBtn:hover{
+			background-color: rgb(245, 245, 245);
+		}
+		.productGallery .navBtn svg{
+			height: 90%;
+			fill:gray;
+		}
+		.productGallery .leftNavBtn{
+			position: absolute;
+			top: 50%;
+			left:1%;
+			transform: translate( 0, -50%);
+		}
+		.productGallery .rightNavBtn{
+			position: absolute;
+			top: 50%;
+			right:1%;
+			transform: translate( -2%, -50%);
+		}
+
+		/* flex setting start */
+		.productGallery .imgThumbnail{
+			display: flex;
+			flex-direction: row;
+		}
+
+		.productGallery .imgThumbnail .thumRow {
+			display:flex;
+			flex-direction: row;
+			gap:1%;
+			overflow: auto;
+			padding:5px 10px;
+		}
+		/* flex setting end */
+
+		/* Gallery css end */
+		@media only screen and (max-width:1000px){
+			.productGallery{
+				width:90%;
+			}
+		}

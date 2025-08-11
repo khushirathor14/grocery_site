@@ -1,0 +1,49 @@
+/* .addBtn  .counter .hide .decrease .countDis .increase */
+.add2CartBtn *{
+			/* border: 1px solid red; */
+			font-size: 1rem;
+			padding: 6px 6px;
+			color: white;
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		}
+		.add2CartBtn{
+			border: 1px solid white;
+			width:100%;
+			
+			border-radius: 5px;
+			text-align: center;
+			background-color: rgba(1, 198, 1, 0.9);
+			overflow: hide;
+		}
+		.add2CartBtn .addBtn{
+			padding: 12.5px 0;
+			width: 100%;
+		}
+		.add2CartBtn .addBtn , .add2CartBtn .decrease, .add2CartBtn .increase{
+			background-color: transparent;
+			border:none;
+		}
+		.add2CartBtn .counter{
+			margin : 0 8px;
+		}
+		.add2CartBtn .counter .increase:disabled{
+			opacity: 0.6;
+			cursor: not-allowed;
+		}
+		.add2CartBtn .counter .countDis{
+			user-select: none;
+		}
+		.hide{
+			display:none !important;
+		}
+		/* === flex setting start === */
+		.add2CartBtn .counter{
+			display: flex;
+			align-items: stretch;
+			padding:0;
+		}
+		.add2CartBtn .counter .countDis{
+			flex:1;
+			text-align: center;
+		}
+		/* === flex setting end === */

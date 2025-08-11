@@ -1,0 +1,107 @@
+/* ==== navigation bar start === */
+aside{
+	max-width:90%;
+	
+	margin: 0rem auto;
+}
+#catagoryNavbar{
+		max-width:fit-content;
+		/* width:min-content; */
+		background-color: antiquewhite;
+		box-shadow: inset 2px 2px 7px rgb(0, 0, 0);
+		border-radius: 10px;
+		margin: 1rem auto;
+}
+#catagoryNavbar *{
+	/* border: 1px solid red; */
+}
+#catagoryNavbar ul {
+	list-style: none;
+	max-width:100%;
+}
+#catagoryNavbar ul .catagoryThumbnail{
+	aspect-ratio: 1/1;
+	border-radius: 10px;
+	overflow: hidden;
+	background-color: rgb(255, 255, 255);
+	border: 2px dashed rgb(255, 255, 255);
+	outline: 5px solid rgb(255, 255, 255);
+	box-shadow: 1px 1px 13px -2px rgba(0, 0, 0, 0.979);
+	
+}
+#catagoryNavbar ul .catagoryThumbnail:hover{
+	animation: shakeItemDiv .3s ease;
+}
+#catagoryNavbar ul .catagoryThumbnail a{
+	text-decoration: none;
+	width:100%;
+	height:100%;
+	margin: auto 0;
+	overflow: hidden;
+	background-color: white;
+	box-shadow:inset 1px 1px 6px -2px black;
+	border-radius: 10px;
+	border: 5px solid white;
+}
+#catagoryNavbar ul .catagoryThumbnail img{
+	width: 90%;
+	height: 90%;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 10px;
+	
+	transition: transform .2s ease;
+}
+#catagoryNavbar ul .catagoryThumbnail img:hover{
+	transform: scale(1.2);
+}
+/* === flex-box stylin start === */
+#catagoryNavbar ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	/* align-items: center; */
+	justify-content: flex-start;
+	column-gap: 1.5rem;
+	row-gap: 1rem;
+	padding: 1rem;
+}
+#catagoryNavbar ul .catagoryThumbnail{
+	flex: 0 0 7rem;
+}
+#catagoryNavbar ul .catagoryThumbnail{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#catagoryNavbar ul .catagoryThumbnail a{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+/* === flex-box stylin end === */
+@media only screen and (max-width:1000px){
+	#catagoryNavbar ul{
+		align-content: center;
+		/* align-items: center; */
+		justify-content: center;
+	}
+	#catagoryNavbar ul .catagoryThumbnail{
+
+	}
+}
+@keyframes shakeItemDiv {
+	0%{ transform: rotate(2deg) scale(1.02);}
+	20%{ transform: rotate(4deg) scale(1.04);}
+	40%{ transform: rotate(8deg) scale(1.06);}
+	60%{ transform: rotate(-4deg) scale(1.04);}
+	80%{ transform: rotate(-2deg) scale(1.02);}
+	100%{ transform: rotate(0deg) scale(1.0);}
+	/* 0% { transform: translateX(0); }
+	20% { transform: translateX(-4px); }
+	40% { transform: translateX(4px); }
+	60% { transform: translateX(-4px); }
+	80% { transform: translateX(4px); }
+	100% { transform: translateX(0); } */
+}
+/* ==== navigation bar end === */

@@ -1,0 +1,203 @@
+header *{
+	/* border: 1px solid red; */
+}
+	header{
+		width:95%;
+		margin: 0 auto;
+		padding: 1rem 3rem;
+		border-radius: 10px;
+		background-color: antiquewhite;
+	}
+	header .logoNTitle{
+		
+	}
+	header .logoNTitle .siteLogo{
+		width:5.5rem;
+	}
+	
+	header .logoNTitle .siteTitle{
+		width: 13rem;
+	}
+	header .searchBar{
+		background-color: rgba(224, 224, 224, 0.9);
+		border-radius: 13px;
+	}
+	header .searchBar input[type="search"]{
+		background-color: transparent;
+		font-size: 1.3rem;
+		padding: .7rem 1rem;
+		border: none;
+		width: 90%;
+	}
+	header .searchBar input[type="search"]:focus{
+		outline: none;
+	}
+	header .searchBar .searchBTN{
+		background: transparent;
+		border: none;
+		padding: 0.5rem 0.5rem;
+	}
+
+	header .searchBar .searchBTN .searchIcon{
+		width:2.3rem;
+		height: 2.3rem;
+		padding: .5rem;
+		border: nonw;
+	}
+
+	
+	header .btnArea .loginBtn{
+		font-size: .8rem;
+		padding: .5rem;
+		color: rgb(69, 115, 0);
+		background-color: transparent;
+		border: none;
+		/* border-radius: 10px; */
+		transition: transform .3s ease;
+	}
+	header .btnArea .loginBtn svg{
+		width:2rem;
+		fill: rgb(69, 115, 0);
+	}
+	header .btnArea .loginBtn:hover svg{
+		animation: shakeCart 0.5s ease;
+		transform: scale(1.1);
+	}
+	
+
+	header .btnArea .cartBtn{
+		width:max-content;
+		font-size: .8rem;
+		/* background-color: rgb(0, 200, 0); */
+		background-color: transparent;
+		border:none;
+		/* border-radius: 10px; */
+		padding: 0.5rem;
+		color:green;
+		fill: green;
+		position: relative;
+	}
+	header .btnArea .cartBtn .cartCount{
+		background-color: rgb(0, 113, 51);
+		color: rgb(255, 255, 255);
+		width: 1.3rem;
+		height: 1.3rem;
+		padding:10px;
+		border-radius: 50%;
+		font-size: 1rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		/* set position */
+		position: absolute;
+		top:0;
+		right: 0;
+		/* transform: translate(50%, -30%); */
+
+	}
+	header .btnArea .cartBtn:hover svg {
+		/* background-color: white; */
+		color: rgb(0, 200, 0);
+		fill: rgb(0, 200, 0);
+		animation: shakeCart 0.5s ease;
+		/* filter: brightness(0) saturate(100%) invert(36%) sepia(84%) saturate(508%) hue-rotate(74deg) brightness(97%) contrast(90%); */
+	}
+
+	/* 
+	header .btnArea .cartBtn .cartIcon{
+			width: 2rem;
+			margin-right: .2rem;
+			filter: brightness(0) invert(1);
+	}*/
+	header .btnArea{
+		padding: 0 1rem;
+	}
+
+	/* flex setting start */
+	header{
+		display: flex;
+		/* flex-wrap: wrap; */
+		gap: 8rem;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+
+	header .logoNTitle a{
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		gap:2rem;
+	}
+
+	header .searchBar{
+		flex-grow: 0;
+		flex-basis: 100%;
+	}
+
+	header .searchBar{
+		display:flex;
+		align-items: center;
+	}
+	header .searchBar input[type="search"]{
+		flex-grow: 1;
+	}
+	header .btnArea{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-evenly;
+		gap:1rem;
+	}
+	
+	
+	/* flex setting end */
+	@media only screen and (max-width: 1000px){
+		header {
+			flex-direction: column;
+			align-items: stretch;
+			gap:1rem;
+		}
+		header .logoNTitle{
+			flex: 1 0 100%;
+		} 
+		header .logoNTitle{
+			gap:0.1rem;
+		}
+		header .logoNTitle img{
+			width:4rem;
+		}
+		
+		header .logoNTitle .siteTitle{
+
+			width: 100%;
+		}
+		header .searchBar input[type="search"]{
+			
+		}
+		header .btnArea{
+			/* position: fixed;
+			bottom: 0;
+			left:50%;
+			transform: translate(-50%);
+			padding:.5rem;
+			border-radius: 10px;
+			background-color: rgba(128, 128, 128, 0.4); */
+		}
+		header .btnArea .cartBtn{
+			font-size: .91rem;
+		}
+	}
+	@keyframes shakeCart {
+		0%{ transform: rotate(4deg);}
+		20%{ transform: rotate(8deg);}
+		40%{ transform: rotate(16deg);}
+		60%{ transform: rotate(-8deg);}
+		80%{ transform: rotate(-4deg);}
+		100%{ transform: rotate(0deg);}
+		/* 0% { transform: translateX(0); }
+		20% { transform: translateX(-4px); }
+		40% { transform: translateX(4px); }
+		60% { transform: translateX(-4px); }
+		80% { transform: translateX(4px); }
+		100% { transform: translateX(0); } */
+	}

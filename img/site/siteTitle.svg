@@ -1,0 +1,7 @@
+<svg viewBox="10 0 230 50" xmlns="http://www.w3.org/2000/svg">
+  <text x="10" y="40"  font-size="42" font-weight="bold" user-select="none">
+    <tspan fill="#28a745" >Bhaji</tspan>
+    <tspan dx="-13" fill="#e53935" font-family="Arial">Lelo  </tspan>
+  </text>
+</svg>
+

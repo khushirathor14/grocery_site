@@ -1,0 +1,113 @@
+/* === singup form styling start === */
+#singup_container{
+	width:40rem;
+	margin: 1rem auto;
+}
+
+#singupForm{
+	width:100%;
+	
+	background-color: rgba(245, 222, 179, 0.9);
+	border-radius: 10px;
+	padding: 12px 0;
+}
+#singupForm .form-Title{
+	color: rgb(66, 170, 66);
+	margin: 1rem auto;
+	/* text-align: center; */
+}
+#singupForm fieldset{
+	width:95%;
+	margin: 1rem auto;
+	border: 1px dashed gray;
+	border-radius: 10px;
+	padding:1rem;
+}
+
+#singupForm fieldset legend{
+	font-family: 'Times New Roman', Times, serif;
+	font-weight: 900;
+}
+/* spaical Effect Start  */
+#singupForm .input-field{
+	/* position: relative; */
+	width:max-content;
+	border-radius: 10px;
+	overflow: hidden;
+	font-size: 1rem;
+	border: 1px solid skyblue;
+	box-shadow: 0 0 7px -4px black;
+}
+#singupForm .input-field label{
+	/* position: absolute; */
+	/* top: 12px; */
+	/* left:0; */
+	padding: 6px;
+	background-color: whitesmoke;
+	text-align: center;
+}
+#singupForm .input-field .input-box{
+	padding: 12px;
+	font-size: 1rem;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	text-align: center;
+	border:none;
+}
+#singupForm .input-field .input-box:focus{
+	outline: none;
+}
+/* spaical Effect End */
+/* ===== flex setting start ==== */
+#singupForm{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#singupForm .input-field{
+	display: flex;
+	flex-direction: column;
+}
+#nameInputArea{
+	display: flex;
+	gap:6px;
+	flex-wrap: wrap;
+}
+#nameInputArea .input-field{
+	flex:1;
+}
+#addressInputArea {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-evenly;
+	gap: 12px 6px;
+}
+#contact{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-evenly;
+}
+#pwd{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+}
+#singupForm button[type="submit"]{
+	background-color: rgb(126, 151, 68);
+	color: white;
+	font-size: 1.3rem;
+	padding: 6px;
+	border-radius: 10px;
+	text-transform: capitalize;
+	margin: 6px auto;
+	border:none;
+}
+/* ===== flex setting end ==== */
+@media only screen and (max-width:1000px){
+	
+}
+
+
+/* === singup styling end === */

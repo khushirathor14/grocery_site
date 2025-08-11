@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+    <link rel="stylesheet" href="./css/genralStyle.css">
+    <link rel="stylesheet" href="./css/addProductStyle.css">
+</head>
+<body>
+    <di id="contaner">
+        <form action="./php/main.php" method="post">
+        <fieldset>
+            <legend>Add data</legend>
+            <span>
+                <label for="addImg">Add Image</label>
+                <input type="file" name="addImg" id="addImg" multiple>
+            </span>
+            <br>
+            <span>
+                <label for="BrandName">Brand Name :&nbsp;</label>
+                <select name="BrandName" id="">
+                    <optgroup label="no Brand">
+                        <option value="NO_Brand" selected> no Brand</option>
+                    </optgroup>
+                    <optgroup label="Milk Product">
+                        <option value="Amul">Amul</option>
+                        <option value="MotherDairy">Mother dairy</option>
+                    </optgroup>
+                    <optgroup label="Vegidi">
+                        <option value="safal">safal</option>
+                    </optgroup>
+                   
+                </select>
+            </span>
+            <span>
+                <label for="Name">Product Name :&nbsp</label>
+                <input type="text" name="Name" id="" placeholder="Add product name">
+            </span>
+            <br>
+            <span>
+                <label for="quantity">Quantity :&nbsp</label>
+                <input type="number" min="1" name="quantity" id="" placeholder="quantity" style="width:25%">
+                <select name="unit" id="unit" required style="width:25%">
+                    <optgroup label="Gram">
+                        <option value="mg">Mili Gram</option>
+                        <option value="g">Gram</option>
+                        <option value="kg">kilo Gram</option>
+                        
+                    </optgroup>
+                    <optgroup label="Liquid">
+                        <option value="mL">Mili Liter</option>
+                        <option value="L">Liter</option>
+                    </optgroup>
+                    <optgroup label="number">
+                        <option value="darjan ">darjan</option>
+                        <option value="pair">pair</option>
+                        <option value="unit" selected>number</option>
+                    </optgroup>
+                </select>
+            </span>
+            <br>
+            <span>
+                <label for="MRP">MRP :&nbsp</label>
+                <input type="number" min="1" name="MRP" id="MRP" placeholder="Max Retail Price">
+            </span>
+            <br>
+            <span>
+                <label for="FinalPrice">Final Price :&nbsp</label>
+                <input type="number" min="1" name="FinalPrice" id="FianlPrice" placeholder="Final price"><br>
+            </span>
+            <span>
+                <label for="Discount">Discount :&nbsp</label>
+                <input type="number" min="0" name="Discount" placeholder="Discount">
+            </span>
+            <br>
+            <span>
+                <label for="Catagary">Catagery :&nbsp</label>
+                <select name="Catagary" id="Catagary">
+                    <option value="Fruts">Fruts</option>
+                    <option value="Vegitable">vagitable</option>
+                    <option value="Milk_Product">Milk Product</option>
+                </select>
+            </span>
+            <br>
+            <span>
+                <label for="Discripsion" style="margin-bottom:3%;">Discripction :&nbsp</label><br>
+                <textarea name="Discripsion" id="dis" placeholder="Add product discription" required></textarea><br>
+            </span>
+            
+            <span class="btns">
+                <button type="submit">Add Data</button>
+                <button type="reset">Reset</button>
+            </span>
+        </fieldset>
+        </form>
+        <!-- imgPreConter is main img contener -->
+        <div id="imgPreConter"> 
+            <!-- imgPreviewBox only show one image at a time as select in imgGrid -->
+            <div id="imgPreviewBox">
+                <img src="./img/no_Imgae.jpg" alt="imagePrivew" id="imgPreview">
+            </div>
+            <div id="ImgGrid">
+                <!-- here show all imgae , its div and img tag genrtae by js for n number of image -->
+                <div class="ImgPreviewThem"><img src="./img/testImg/img1.jpg" alt="img1"></div>
+                <div class="ImgPreviewThem"><img src="./img/testImg/img2.jpg" alt="img2"></div>
+                <div class="ImgPreviewThem"><img src="./img/testImg/img3.jpg" alt="img3"></div>
+                <div class="ImgPreviewThem"><img src="./img/testImg/img4.jpg" alt="img4"></div>
+                <div class="ImgPreviewThem"><img src="./img/testImg/img5.jpg" alt="img5"></div>
+                <div class="ImgPreviewThem"><img src="./img/testImg/img6.jpg" alt="img5"></div>
+            </div>
+        </div>
+    </div>
+<script src="./js/addProduct.js"></script>
+
+<?php include './php/main.php'; ?>
+</body>
+</html>

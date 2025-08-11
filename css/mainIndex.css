@@ -1,0 +1,62 @@
+@import url('./genralStyle.css');
+@import url('./headerStyle.css');
+@import url('./banner.css');
+@import url('./navBarStyle.css');
+@import url('./mainStyle.css');
+@import url('./ProductCategoryRows.css');
+@import url('./footerStyle.css');
+
+
+/* add on css start */
+@import url('./addBtn.css');
+@import url('./loginForm.css');
+@import url('./singupForm.css');
+/* @import url('./cartContainer.css'); */
+
+/*  add on css end */
+
+body{
+	background: rgb(255, 255, 255) url('./img/groseryBackgrond.png') repeat;
+	background-size: 20%;
+}
+#container{
+	background-color: rgba(192, 125, 255, 0.4);
+	width:98%;
+	margin: 5px auto;
+}
+
+/* main area start*/ 
+	.test{
+	width:100%;
+	
+}
+#usrReview{
+	background-color: gold;
+}
+#itemCategory{
+	background-color: silver;
+}
+#mostSelling{
+	background-color: blanchedalmond;
+}
+#mostBuy{
+	background-color: blueviolet;
+}
+#recentBuy{
+	background-color: beige;
+}  
+/* main area end */
+@media only screen and (max-width:1000px){
+	body{
+		background-size: 50%;
+	}
+}
+/* === add button css start=== */
+.add2CartBtnContainer{
+	width:60%;
+	margin: 12px auto;
+}
+.add2CartBtnContainer .addBtn{
+	padding: 6px 0;
+}
+/* === add button css end=== */

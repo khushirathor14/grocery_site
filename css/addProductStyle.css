@@ -1,0 +1,157 @@
+
+#contaner{
+    padding:1%;
+    width:98%;
+    height:98%;
+}
+form{
+    width:48%;
+    height:90%;
+    display: inline-block;
+}
+fieldset{
+    width:100%;
+    height:100%;
+    padding:5%;
+    border-radius: 10px;
+    background-color:antiquewhite;
+    /* border:none; */
+}
+
+fieldset span label{
+    display:inline-block;
+    width:45%;
+    font-size:1.2em;
+    /* border:2px solid red; */
+}
+
+fieldset span select{
+    width:45%;
+    font-size:1.2em;
+    text-align:center;
+    background-color: rgba(255, 251, 245, 0.719);
+    border-radius:10px;
+    padding:3px;
+    box-shadow: none;
+}
+textarea{
+    resize:none;
+    width:80%;
+    height:10em;
+    padding:2%;
+    border-radius: 10px;
+    border:2px solid rgba(31, 143, 255, 0.767);
+    background-color: rgba(196, 225, 255, 0.315);
+    font-size: 1.2em;
+}
+fieldset span button{
+    margin-right: 30%;
+    padding:.7em;
+    font-size: 1em;
+    border-radius:10px;
+}
+
+
+fieldset input[type="file"]{
+    background-color:aqua;
+
+}
+fieldset input[type="text"], input[type="number"]{
+   width: 45%;
+   font-size:1.1em;
+   padding:2px;
+   border: 1px solid rgba(0, 136, 255, 0.818);
+   border-radius: 7px;
+   color:rgba(0, 136, 255, 0.818);
+}
+form button[type="submit"]{
+    background-color:rgba(0, 149, 0, 0.658);
+    color:white;
+}
+form button[type="submit"]:hover{
+    background-color: white;
+    color: rgba(0, 149, 0, 0.658);
+}
+form button[type="reset"]{
+    background-color: rgba(255, 166, 0, 0.808);
+    color:white;
+    font-weight: 800;
+}
+form button[type="reset"]:hover{
+    background-color: white;
+    color: rgba(255, 166, 0, 0.808);
+    font-weight: 800;
+}
+
+/* image contaner styling */
+
+#imgPreConter{
+    /* width: 50%; */
+    height: 90%;
+    margin: 2mm auto;
+    box-shadow: 1px 1px 4px 2px rgba(38, 38, 38, 0.116);
+}
+
+#imgPreviewBox{
+    width:100%;
+    height:65%;
+
+}
+#imgPreviewBox img{
+    width:90%;
+    height:100%;
+    object-fit: contain;
+}
+#imgPreviewBox{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#ImgGrid{
+    width:100%;
+    height:30%;
+    overflow-x:scroll;
+    /* white-space:nowrap; */
+}
+#ImgGrid div{
+    /* display:inline-block; */
+    width:25%;
+    height:100%;
+    box-shadow: 1px 1px 4px 2px rgba(38, 38, 38, 0.116);
+    overflow: hidden;
+}
+#ImgGrid div img{
+    width:100%;
+    height:100%;
+    object-fit: ccover;
+    object-position: center;
+}
+/* flex setting */
+#ImgGrid {
+    display:flex;
+    flex-direction:row;
+}
+#ImgGrid div{
+    flex: 0 0 25%;
+}
+/* flex setting */
+fieldset{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+/* flex for contaner start */
+#contaner{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+form{
+   flex:0 0 48%;
+}
+#imgPreConter{
+   flex:0 0 48%;
+}
+/* flex for contaner end */
